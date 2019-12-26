@@ -8,6 +8,7 @@ enum userspace_layers {
 };
 
 #define LAYOUT_planck_grid_wrapper(...)          LAYOUT_planck_grid(__VA_ARGS__)
+#define LAYOUT_ortho_5x12_wrapper(...)           LAYOUT_ortho_5x12(__VA_ARGS__)
 
 // KEYS
 #define LT_1 LT(_SYMBOLS, KC_ESC)
@@ -15,6 +16,11 @@ enum userspace_layers {
 // ORTHO BLANK SIDE
 #define ________________ORTHO_BLANK________________        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
 #define ________________ORTHO_TRNS________________         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+
+// NUMBERS
+#define ________________NUMBER_LEFT________________        KC_TRNS, KC_1,    KC_2,    KC_3,    KC_4,    KC_5
+#define ________________NUMBER_RIGHT_______________        KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_TRNS
+
 // QWERTY LAYER
 #define _________________QWERTY_L1_________________        KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T
 #define _________________QWERTY_L2_________________        LT_1,    KC_A,    CTL_T(KC_S),    ALT_T(KC_D),    CMD_T(KC_F),    KC_G

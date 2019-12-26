@@ -16,3 +16,6 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+Patch for compilation error:
+https://github.com/qmk/qmk_firmware/issues/7006#issuecomment-564208375
