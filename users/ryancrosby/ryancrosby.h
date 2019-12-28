@@ -15,6 +15,8 @@ enum userspace_layers {
 #define LT_1 LT(_SYMBOLS, KC_ESC)
 #define LT_SYM LT(_SYMBOLS, KC_ESC)
 #define LT_NAV MO(_NAVIGATION)
+#define CC_CPY LGUI(KC_C)
+#define CC_PST LGUI(KC_V)
 
 // ORTHO BLANK SIDE
 #define ________________ORTHO_BLANK________________        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
