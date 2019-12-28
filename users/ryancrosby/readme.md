@@ -1,5 +1,13 @@
 # Layouts
 
+Ortholinear layouts for cannonkeys, ergodox_ez, and the planck.
+
+## Testing
+
+Make each layout for my user:
+
+> make planck/rev4:ryancrosby && make cannonkeys/ortho60:ryancrosby && make ergodox_ez:ryancrosby
+
 ## License
 
 Copyright 2019 Ryan Crosby @ryancrosby

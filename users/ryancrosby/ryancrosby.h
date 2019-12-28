@@ -12,15 +12,13 @@ enum userspace_layers {
 #define LAYOUT_ergodox_pretty_wrapper(...)       LAYOUT_ergodox_pretty(__VA_ARGS__)
 
 // KEYS
-#define LT_1 LT(_SYMBOLS, KC_ESC)
 #define LT_SYM LT(_SYMBOLS, KC_ESC)
 #define LT_NAV MO(_NAVIGATION)
 #define CC_CPY LGUI(KC_C)
 #define CC_PST LGUI(KC_V)
 
-// ORTHO BLANK SIDE
-#define ________________ORTHO_BLANK________________        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
-#define ________________ORTHO_TRNS________________         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+// TEMPLATE
+#define _____________________T_____________________  _______, _______, _______, _______, _______
 
 // ,-----+-----+-----+-----+-----,   ,-----+-----+-----+-----+-----,
 // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
@@ -53,13 +51,13 @@ enum userspace_layers {
 // ,-----+-----+-----x-----x-----,   ,-----x-----x-----+-----+-----,
 // |  %  |     |  =  |  [  |     |   |     |  ]  |  "  |  ~  |     |
 // ,-----+-----+-----+-----+-----,   ,-----+-----+-----+-----+-----,
-#define _________________SYMBOL_L1_________________  KC_EXLM, KC_AT,   KC_PLUS, KC_LCBR, KC_NO
-#define _________________SYMBOL_L2_________________  KC_HASH, KC_DLR,  KC_PMNS, KC_LPRN, KC_NO
-#define _________________SYMBOL_L3_________________  KC_PERC, KC_CIRC, KC_EQL,  KC_LBRC, KC_NO
+#define ________________SYMBOLS_L1_________________  KC_EXLM, KC_AT,   KC_PLUS, KC_LCBR, KC_NO
+#define ________________SYMBOLS_L2_________________  KC_HASH, KC_DLR,  KC_PMNS, KC_LPRN, KC_NO
+#define ________________SYMBOLS_L3_________________  KC_PERC, KC_CIRC, KC_EQL,  KC_LBRC, KC_NO
 
-#define _________________SYMBOL_R1_________________  KC_NO,   KC_RCBR, KC_GRV,  KC_UNDS, KC_PIPE
-#define _________________SYMBOL_R2_________________  KC_NO,   KC_RPRN, KC_QUOT, KC_AMPR, KC_BSLS
-#define _________________SYMBOL_R3_________________  KC_NO,   KC_RBRC, KC_DQUO, KC_ASTR, KC_TILD
+#define ________________SYMBOLS_R1_________________  KC_NO,   KC_RCBR, KC_GRV,  KC_UNDS, KC_PIPE
+#define ________________SYMBOLS_R2_________________  KC_NO,   KC_RPRN, KC_QUOT, KC_AMPR, KC_BSLS
+#define ________________SYMBOLS_R3_________________  KC_NO,   KC_RBRC, KC_DQUO, KC_ASTR, KC_TILD
 
 // NAVIGATION LAYER
 #define ____________________NAV_L1_________________  _______, KC_MPRV, KC_MPLY, KC_MNXT, _______
@@ -69,7 +67,3 @@ enum userspace_layers {
 #define ____________________NAV_R1_________________  _______, KC_HOME, KC_UP  , KC_END , _______
 #define ____________________NAV_R2_________________  _______, KC_LEFT, KC_DOWN, KC_RGHT, _______
 #define ____________________NAV_R3_________________  _______, _______, _______, _______, _______
-
-// Planck
-#define ________________PLANCK_L4________________        KC_NO,   KC_NO,   KC_NO,   MO(_NAVIGATION),   KC_ENT,   KC_BSPC
-#define ________________PLANCK_R4________________        KC_TAB,   KC_SPC,   MO(_NAVIGATION),   KC_NO,   KC_NO,   KC_NO
