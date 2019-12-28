@@ -62,17 +62,14 @@ enum userspace_layers {
 #define _________________SYMBOL_R3_________________  KC_NO,   KC_RBRC, KC_DQUO, KC_ASTR, KC_TILD
 
 // NAVIGATION LAYER
-#define _____________________TEMP__________________  _______, _______, _______, _______, _______
 #define ____________________NAV_L1_________________  _______, KC_MPRV, KC_MPLY, KC_MNXT, _______
-#define ____________________NAV_L2_________________  _______, _______, _______, _______, _______
+#define ____________________NAV_L2_________________  _______, RGB_VAD, RGB_TOG, RGB_VAI, _______
 #define ____________________NAV_L3_________________  _______, KC_VOLD, KC_MUTE, KC_VOLU, _______
 
-#define ____________________NAV_R1_________________  _______, _______, KC_UP  , _______, _______
+#define ____________________NAV_R1_________________  _______, KC_HOME, KC_UP  , KC_END , _______
 #define ____________________NAV_R2_________________  _______, KC_LEFT, KC_DOWN, KC_RGHT, _______
 #define ____________________NAV_R3_________________  _______, _______, _______, _______, _______
 
 // Planck
 #define ________________PLANCK_L4________________        KC_NO,   KC_NO,   KC_NO,   MO(_NAVIGATION),   KC_ENT,   KC_BSPC
 #define ________________PLANCK_R4________________        KC_TAB,   KC_SPC,   MO(_NAVIGATION),   KC_NO,   KC_NO,   KC_NO
-
-// Ergodox EZ

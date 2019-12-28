@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "ryancrosby.h"
+#include "ergodox_ez.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT_ergodox_pretty_wrapper(
@@ -39,11 +40,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Runs just one time when the keyboard initializes.
 void keyboard_post_init_user(void) {
   // Call the post init code.
-  rgblight_enable_noeeprom(); // enables Rgb, without saving settings
-  rgblight_sethsv_noeeprom(HSV_BLUE); // sets the color to teal/cyan without saving
-  rgblight_mode_noeeprom(RGB_MATRIX_SOLID_COLOR); // sets mode to Fast breathing without saving
+//   rgblight_enable_noeeprom(); // enables Rgb, without saving settings
+  rgblight_sethsv(HSV_BLUE); // sets the color to teal/cyan without saving
+  rgblight_mode(RGB_MATRIX_SOLID_COLOR); // sets mode to Fast breathing without saving
 }
-
 
 // Runs whenever there is a layer state change.
 layer_state_t layer_state_set_user(layer_state_t state) {
@@ -56,15 +56,12 @@ layer_state_t layer_state_set_user(layer_state_t state) {
   switch (layer) {
       case _QWERTY:
         ergodox_right_led_1_on();
-        rgblight_sethsv_noeeprom(HSV_BLUE);
         break;
       case _SYMBOLS:
         ergodox_right_led_2_on();
-        rgblight_sethsv_noeeprom(HSV_PINK);
         break;
       case _NAVIGATION:
         ergodox_right_led_3_on();
-        rgblight_sethsv_noeeprom(HSV_GOLD);
         break;
       default:
         break;
