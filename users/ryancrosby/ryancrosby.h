@@ -16,6 +16,7 @@ enum userspace_layers {
 #define LT_NAV MO(_NAVIGATION)
 #define CC_CPY LGUI(KC_C)
 #define CC_PST LGUI(KC_V)
+#define CC_REF LGUI(KC_R)
 
 // TEMPLATE
 #define _____________________T_____________________  _______, _______, _______, _______, _______

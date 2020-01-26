@@ -10,7 +10,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT, _________________QWERTY_L3_________________, _______,      _______, _________________QWERTY_R3_________________, KC_RSFT,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, LT_NAV ,                                          LT_NAV , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                                                      CC_CPY , CC_PST ,      _______, _______,
-                                                              _______,      _______,
+                                                              CC_REF ,      _______,
                                             KC_ENT , KC_BSPC, _______,      _______, KC_TAB , KC_SPC
     ),
 
