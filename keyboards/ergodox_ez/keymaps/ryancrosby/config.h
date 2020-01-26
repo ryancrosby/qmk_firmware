@@ -1,1 +1,3 @@
 // #define EECONFIG_RGB_MATRIX (uint32_t *)16
+//#undef IGNORE_MOD_TAP_INTERRUPT
+//#define PERMISSIVE_HOLD

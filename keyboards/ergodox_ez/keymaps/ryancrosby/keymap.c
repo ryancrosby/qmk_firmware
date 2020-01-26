@@ -1,6 +1,5 @@
 #include QMK_KEYBOARD_H
 #include "ryancrosby.h"
-#include "ergodox_ez.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT_ergodox_pretty_wrapper(
